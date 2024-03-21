@@ -1,7 +1,7 @@
 Screen2 As screen:
 
     HeaderV2_2 As HeaderV2:
-        BackAction: =Navigate(HeaderV2_2.HomeScreen);
+        BackAction: =Navigate(Screen3);
         BugAction: =If(IsBlank(expanded),Set(expanded,true),Set(expanded,!expanded));
         BugEvent: |-
             =With(
