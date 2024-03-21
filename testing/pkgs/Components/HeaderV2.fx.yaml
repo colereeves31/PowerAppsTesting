@@ -1,0 +1,272 @@
+HeaderV2 As CanvasComponent:
+    BackAction():
+        ThisProperty:
+            Default: =Back();
+    BugAction():
+        ThisProperty:
+            Default: =If(IsBlank(expanded),Set(expanded,true),Set(expanded,!expanded));
+    BugEvent(BugDescription As String):
+        BugDescription:
+            Default: ="Text"
+        ThisProperty:
+            Default: |-
+                =With(
+                    {
+                        screen: App.ActiveScreen.Name,
+                        outName: Concatenate(App.ActiveScreen.Name,"_",Text(Now())),
+                        desc: BugDescription
+                    },
+                    Patch(
+                        'Mileage Reimbursement Bug Report',
+                        Defaults('Mileage Reimbursement Bug Report'),
+                        {
+                            'Screen Shot': {
+                                FileName: outName,
+                                Value: PDF(
+                                    App.ActiveScreen,
+                                    {
+                                        DPI: 24,
+                                        Orientation: PaperOrientation.Landscape
+                                    }
+                                )
+                            },
+                            'Bug Description': desc,
+                            Name: outName,
+                            Screen: screen,
+                            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value
+                        }
+                    )
+                )
+    BugSubmission():
+        ThisProperty:
+            Default: =Set(expanded,false);
+    HomeAction():
+        ThisProperty:
+            Default: =Navigate(HeaderV2.HomeScreen);
+    baseHeight: =100
+    BugReportScreen: =App.ActiveScreen
+    EdgeSpacing: =5
+    Fill: =RGBA(0,0,0,0)
+    headerFill: =RGBA(0,125,255,1)
+    Height: =App.Height - HeaderV2.Y
+    HomeScreen: =App.ActiveScreen
+    OnReset: |-
+        =Concurrent(
+            Set(expanded,Blank()),
+            Set(patchPrep,Blank())
+        );
+    popupHeight: =App.Height / (4/3)
+    popupWidth: =App.Width / (4/3)
+    showBack: =true
+    showBug: =true
+    showHome: =true
+    Width: =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    HeaderContainer As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =HeaderV2.headerFill
+        Height: =HeaderV2.baseHeight
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutGap: =HeaderV2.EdgeSpacing
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =HeaderV2.EdgeSpacing
+        PaddingLeft: =HeaderV2.EdgeSpacing
+        PaddingRight: =HeaderV2.EdgeSpacing
+        PaddingTop: =HeaderV2.EdgeSpacing
+        Width: =Parent.Width
+        Y: |
+            =0
+        ZIndex: =8
+
+        XcelLogo As image:
+            Height: =HCT_Navigation.Height - HeaderV2.EdgeSpacing * 2
+            Image: =BlackXcelLogo
+            LayoutMinHeight: =320
+            LayoutMinWidth: =320
+            Width: =Self.Height
+            X: =HeaderV2.EdgeSpacing
+            Y: =HeaderV2.EdgeSpacing
+            ZIndex: =1
+
+        VCT_WelcomeUser As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width / 4
+            X: =XcelLogo.X + XcelLogo.Width + HeaderV2.EdgeSpacing
+            Y: =40
+            ZIndex: =2
+
+            LBL_userWelcome As label:
+                AutoHeight: =true
+                Height: =VCT_WelcomeUser.Height / 2
+                LayoutMinHeight: =1
+                LayoutMinWidth: =1
+                LineHeight: =1
+                PaddingBottom: =HeaderV2.EdgeSpacing
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =HeaderV2.EdgeSpacing
+                Text: ="Welcome, "&First(Split(User().FullName," ")).Value&"!"
+                Width: =Parent.Width
+                ZIndex: =1
+
+            LBL_ActiveScreen As label:
+                AutoHeight: =true
+                Height: =VCT_WelcomeUser.Height / 2
+                LayoutMinHeight: =1
+                LayoutMinWidth: =1
+                LineHeight: =1
+                PaddingBottom: =HeaderV2.EdgeSpacing
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =HeaderV2.EdgeSpacing
+                Text: =If(IsBlank(App.ActiveScreen.Name),"Filler Text",App.ActiveScreen.Name)
+                Width: =Parent.Width
+                ZIndex: =2
+
+        HCT_Navigation As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.End
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =HeaderV2.EdgeSpacing
+            PaddingLeft: =HeaderV2.EdgeSpacing
+            PaddingRight: =HeaderV2.EdgeSpacing
+            PaddingTop: =HeaderV2.EdgeSpacing
+            Width: =Parent.Width
+            ZIndex: =3
+
+            BackButton As icon.BackArrow:
+                Color: =HomeButton.Color
+                Height: =Self.Width
+                Icon: =Icon.BackArrow
+                OnSelect: =HeaderV2.BackAction();
+                Visible: =HeaderV2.showBack
+                Width: =HomeButton.Width
+                ZIndex: =1
+
+            BugButton As icon.Bug:
+                Color: =HomeButton.Color
+                Fill: =HomeButton.Fill
+                Height: =HomeButton.Height
+                Icon: =Icon.Bug
+                OnSelect: |-
+                    =HeaderV2.BugAction();
+                    //HeaderV2.BugEvent(HeaderV2.BugReportScreen.Name);
+                Visible: =HeaderV2.showBug
+                Width: =HomeButton.Width
+                ZIndex: =2
+
+            HomeButton As icon.Home:
+                Color: =Color.Black
+                Fill: =RGBA(0,0,0,0)
+                Height: =Parent.Height / 1.5
+                Icon: =Icon.Home
+                OnSelect: =HeaderV2.HomeAction();
+                Visible: =HeaderV2.showHome
+                Width: =Self.Height
+                X: =Parent.Width - Self.Width - HeaderV2.EdgeSpacing
+                Y: =(Parent.Height - Self.Height) / 2
+                ZIndex: =3
+
+    Popup As groupContainer.manualLayoutContainer:
+        BorderThickness: =3
+        Fill: =HeaderV2.headerFill
+        Height: =HeaderV2.popupHeight
+        PaddingBottom: =2*HeaderV2.EdgeSpacing
+        PaddingLeft: =2*HeaderV2.EdgeSpacing
+        PaddingRight: =2*HeaderV2.EdgeSpacing
+        PaddingTop: =2*HeaderV2.EdgeSpacing
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Visible: =expanded
+        Width: =HeaderV2.popupWidth
+        X: =(App.Width - Self.Width) / 2 - HeaderV2.X
+        Y: =(App.Height - Self.Height) / 2 - HeaderV2.Y
+        ZIndex: =9
+
+        VCT_Popup As groupContainer.verticalAutoLayoutContainer:
+            Height: =Parent.Height - 2*HeaderV2.EdgeSpacing - BTN_PopupSubmit.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =HeaderV2.EdgeSpacing
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            ZIndex: =1
+
+            VCT_Entry_1 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                Height: =VCT_Popup.Height / 5
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =HeaderV2.EdgeSpacing
+                LayoutMinHeight: =112
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =HeaderV2.EdgeSpacing
+                PaddingLeft: =HeaderV2.EdgeSpacing
+                PaddingRight: =HeaderV2.EdgeSpacing
+                PaddingTop: =HeaderV2.EdgeSpacing
+                Width: =Parent.Width
+                ZIndex: =3
+
+                LBL_EntryLabel_1 As label:
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Bold
+                    Height: =70
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =560
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =15
+                    Text: ="Bug Description"
+                    Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                    ZIndex: =1
+
+                TXT_EntryValue_1 As text:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    Default: ="Text input"
+                    EnableSpellCheck: =true
+                    FillPortions: =1
+                    Height: =70
+                    HoverBorderColor: =RGBA(128, 128, 128, 1)
+                    HoverFill: =RGBA(102, 102, 102, 1)
+                    LayoutMinHeight: =1
+                    LayoutMinWidth: =560
+                    Mode: =TextMode.MultiLine
+                    Size: =LBL_EntryLabel_1.Size * 0.8
+                    Width: =LBL_EntryLabel_1.Width
+                    ZIndex: =2
+
+        BTN_PopupSubmit As button:
+            BorderStyle: =BorderStyle.None
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =Popup.Height / 10
+            OnSelect: |-
+                =HeaderV2.BugEvent(TXT_EntryValue_1.Text);
+                HeaderV2.BugSubmission();
+            Size: =LBL_EntryLabel_1.Size
+            Text: ="Submit"
+            Width: =Popup.Width / 3
+            X: =(Parent.Width - Self.Width) /2
+            Y: =Popup.Height - Self.Height - HeaderV2.EdgeSpacing
+            ZIndex: =2
+

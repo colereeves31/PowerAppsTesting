@@ -1,0 +1,46 @@
+Screen1 As screen:
+
+    Button1 As button:
+        OnSelect: |-
+            =Launch("https://apps.powerapps.com/play/e/2ccae196-2d8c-4830-8277-912b822234f8/a/9b3313ac-e21b-4335-90d0-7227f607202c?tenantId=24b2a583-5c05-4b6a-b4e9-4e12dc0025ad&hint=a085933e-664a-44de-80f2-3cc735973b09&sourcetime=1707169165018", {text: "this is the text", number: "10", record: 10})
+        Text: ="Button"
+        X: =595
+        Y: =370
+        ZIndex: =1
+
+    HeaderV2_1 As HeaderV2:
+        BackAction: =Back();
+        BugAction: =If(IsBlank(expanded),Set(expanded,true),Set(expanded,!expanded));
+        BugEvent: |-
+            =With(
+                {
+                    screen: App.ActiveScreen.Name,
+                    outName: Concatenate(App.ActiveScreen.Name,"_",Text(Now())),
+                    desc: BugDescription
+                },
+                Patch(
+                    'Mileage Reimbursement Bug Report',
+                    Defaults('Mileage Reimbursement Bug Report'),
+                    {
+                        'Screen Shot': {
+                            FileName: outName,
+                            Value: PDF(
+                                App.ActiveScreen,
+                                {
+                                    DPI: 24,
+                                    Orientation: PaperOrientation.Landscape
+                                }
+                            )
+                        },
+                        'Bug Description': desc,
+                        Name: outName,
+                        Screen: screen,
+                        'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value
+                    }
+                )
+            )
+        BugSubmission: =Set(expanded,false);
+        Height: =App.Height - HeaderV2_1.Y
+        HomeAction: =Navigate(HeaderV2_1.HomeScreen);
+        ZIndex: =2
+

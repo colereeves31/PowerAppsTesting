@@ -1,0 +1,37 @@
+Screen2 As screen:
+
+    HeaderV2_2 As HeaderV2:
+        BackAction: =Navigate(HeaderV2_2.HomeScreen);
+        BugAction: =If(IsBlank(expanded),Set(expanded,true),Set(expanded,!expanded));
+        BugEvent: |-
+            =With(
+                {
+                    screen: App.ActiveScreen.Name,
+                    outName: Concatenate(App.ActiveScreen.Name,"_",Text(Now())),
+                    desc: BugDescription
+                },
+                Patch(
+                    'Mileage Reimbursement Bug Report',
+                    Defaults('Mileage Reimbursement Bug Report'),
+                    {
+                        'Screen Shot': {
+                            FileName: outName,
+                            Value: PDF(
+                                App.ActiveScreen,
+                                {
+                                    DPI: 24,
+                                    Orientation: PaperOrientation.Landscape
+                                }
+                            )
+                        },
+                        'Bug Description': desc,
+                        Name: outName,
+                        Screen: screen,
+                        'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value
+                    }
+                )
+            )
+        BugSubmission: =Set(expanded,false);
+        Height: =App.Height - HeaderV2_2.Y
+        HomeAction: =Navigate(HeaderV2_2.HomeScreen);
+
