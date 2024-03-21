@@ -317,7 +317,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
+          "AutoRuleBindingString": "RGBA(255, 0, 0, 1)",
           "InvariantPropertyName": "headerFill",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
