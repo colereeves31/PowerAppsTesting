@@ -1,0 +1,136 @@
+{
+  "ComponentIndexes": {
+    "HeaderV2": 2,
+    "HeaderV2_1": 1,
+    "HeaderV2_2": 2
+  },
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "BackButton": 12,
+    "BTN_PopupSubmit": 21,
+    "BugButton": 13,
+    "Button1": 5,
+    "HCT_Navigation": 11,
+    "HeaderContainer": 7,
+    "HeaderV2": 6,
+    "HeaderV2_1": 22,
+    "HeaderV2_2": 24,
+    "HomeButton": 14,
+    "Host": 3,
+    "LBL_ActiveScreen": 10,
+    "LBL_EntryLabel_1": 19,
+    "LBL_userWelcome": 9,
+    "Popup": 16,
+    "Screen1": 4,
+    "Screen2": 23,
+    "TXT_EntryValue_1": 20,
+    "VCT_Entry_1": 18,
+    "VCT_Popup": 17,
+    "VCT_WelcomeUser": 8,
+    "XcelLogo": 15
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "03/21/2024 20:18:51",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {},
+  "LocalDatabaseReferencesAsEmpty": true,
+  "LocalResourceFileNames": {
+    "BlackXcelLogo": "42cdacab-b23b-4e27-bca6-79534981ab3e.png"
+  },
+  "LocalResourceRootPaths": {
+    "BlackXcelLogo": "https://docserverpwaprodwus.blob.core.windows.net/e7c94a78-aba0-442d-aa4d-da9aa6c18bed-1/resource/Assets0Images0ef23038b-7aa3-4e07-ba74-74493d37a932.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-03-21T20%3A09%3A50Z&ske=2024-03-22T20%3A24%3A50Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-03-22T20%3A24%3A50Z&sr=b&sp=r&sig=CqgeuZNhoW72wt106NGxNI7m6e2%2BSf%2BajSYk9GIVCbQ%3D"
+  },
+  "OrderComponentMetadata": {
+    "c83afc174dc74ccaafd259d9aa2ec3a4": 0
+  },
+  "OrderComponentTemplate": {
+    "c83afc174dc74ccaafd259d9aa2ec3a4": 0
+  },
+  "OrderDataSource": {},
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 5,
+    "groupContainer": 0,
+    "icon": 2,
+    "image": 3,
+    "label": 1,
+    "text": 4
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "BackButton": {},
+    "BTN_PopupSubmit": {},
+    "BugButton": {},
+    "Button1": {},
+    "HCT_Navigation": {},
+    "HeaderContainer": {},
+    "HeaderV2": {},
+    "HeaderV2_1": {},
+    "HeaderV2_2": {},
+    "HomeButton": {},
+    "Host": {},
+    "LBL_ActiveScreen": {},
+    "LBL_EntryLabel_1": {},
+    "LBL_userWelcome": {},
+    "Popup": {},
+    "Screen1": {},
+    "Screen2": {},
+    "TXT_EntryValue_1": {},
+    "VCT_Entry_1": {},
+    "VCT_Popup": {},
+    "VCT_WelcomeUser": {},
+    "XcelLogo": {}
+  },
+  "PCFDynamicSchemaForIRRetrievalEntry": {},
+  "PCFTemplateEntry": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "BackButton": 8,
+    "BTN_PopupSubmit": 17,
+    "BugButton": 9,
+    "Button1": 1,
+    "HCT_Navigation": 7,
+    "HeaderContainer": 3,
+    "HeaderV2": 0,
+    "HeaderV2_1": 0,
+    "HeaderV2_2": 2,
+    "HomeButton": 10,
+    "Host": 0,
+    "LBL_ActiveScreen": 6,
+    "LBL_EntryLabel_1": 15,
+    "LBL_userWelcome": 5,
+    "Popup": 12,
+    "Screen1": 0,
+    "Screen2": 0,
+    "TXT_EntryValue_1": 16,
+    "VCT_Entry_1": 14,
+    "VCT_Popup": 13,
+    "VCT_WelcomeUser": 4,
+    "XcelLogo": 11
+  },
+  "ResourcesJsonIndices": {
+    "Image-BlackXcelLogo": 0,
+    "Image-SampleImage": 1
+  },
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0582742,
+    "ControlCount": {
+      "button": 2,
+      "c83afc174dc74ccaafd259d9aa2ec3a4": 3,
+      "groupContainer": 6,
+      "icon": 3,
+      "image": 1,
+      "label": 3,
+      "screen": 1,
+      "text": 1
+    },
+    "DeserializationLoadTime": 0.5950263
+  },
+  "WasLocalDatabaseReferencesEmpty": true
+}
