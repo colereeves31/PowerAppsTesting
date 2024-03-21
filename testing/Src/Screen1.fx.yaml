@@ -41,6 +41,6 @@ Screen1 As screen:
             )
         BugSubmission: =Set(expanded,false);
         Height: =App.Height - HeaderV2_1.Y
-        HomeAction: =Navigate(HeaderV2_1.HomeScreen);
+        HomeAction: =Navigate(HeaderV2.HomeScreen);
         ZIndex: =2
 
