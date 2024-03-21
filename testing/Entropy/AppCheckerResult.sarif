@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 34,
-                  "charOffset": 175,
+                  "charOffset": 182,
                   "snippet": {
                     "text": "'Mileage Reimbursement Bug Report'"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 34,
-                  "charOffset": 228,
+                  "charOffset": 236,
                   "snippet": {
                     "text": "'Mileage Reimbursement Bug Report'"
                   }
@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 44,
-                  "charOffset": 219,
+                  "charOffset": 227,
                   "snippet": {
                     "text": "Defaults('Mileage Reimbursement Bug Report')"
                   }
@@ -144,7 +144,7 @@
                 },
                 "region": {
                   "charLength": 50,
-                  "charOffset": 714,
+                  "charOffset": 737,
                   "snippet": {
                     "text": "'Status Reason (Mileage Reimbursement Bug Report)'"
                   }
@@ -184,7 +184,7 @@
                 },
                 "region": {
                   "charLength": 59,
-                  "charOffset": 706,
+                  "charOffset": 729,
                   "snippet": {
                     "text": "Choices('Status Reason (Mileage Reimbursement Bug Report)')"
                   }
@@ -224,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 766,
+                  "charOffset": 789,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -263,10 +263,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 628,
-                  "charOffset": 160,
+                  "charLength": 647,
+                  "charOffset": 166,
                   "snippet": {
-                    "text": "Patch(\n        'Mileage Reimbursement Bug Report',\n        Defaults('Mileage Reimbursement Bug Report'),\n        {\n            'Screen Shot': {\n                FileName: outName,\n                Value: PDF(\n                    App.ActiveScreen,\n                    {\n                        DPI: 24,\n                        Orientation: PaperOrientation.Landscape\n                    }\n                )\n            },\n            'Bug Description': desc,\n            Name: outName,\n            Screen: screen,\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\n        }\n    )"
+                    "text": "Patch(\r\n        'Mileage Reimbursement Bug Report',\r\n        Defaults('Mileage Reimbursement Bug Report'),\r\n        {\r\n            'Screen Shot': {\r\n                FileName: outName,\r\n                Value: PDF(\r\n                    App.ActiveScreen,\r\n                    {\r\n                        DPI: 24,\r\n                        Orientation: PaperOrientation.Landscape\r\n                    }\r\n                )\r\n            },\r\n            'Bug Description': desc,\r\n            Name: outName,\r\n            Screen: screen,\r\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\r\n        }\r\n    )"
                   }
                 }
               },
@@ -303,10 +303,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 509,
-                  "charOffset": 273,
+                  "charLength": 524,
+                  "charOffset": 282,
                   "snippet": {
-                    "text": "{\n            'Screen Shot': {\n                FileName: outName,\n                Value: PDF(\n                    App.ActiveScreen,\n                    {\n                        DPI: 24,\n                        Orientation: PaperOrientation.Landscape\n                    }\n                )\n            },\n            'Bug Description': desc,\n            Name: outName,\n            Screen: screen,\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\n        }"
+                    "text": "{\r\n            'Screen Shot': {\r\n                FileName: outName,\r\n                Value: PDF(\r\n                    App.ActiveScreen,\r\n                    {\r\n                        DPI: 24,\r\n                        Orientation: PaperOrientation.Landscape\r\n                    }\r\n                )\r\n            },\r\n            'Bug Description': desc,\r\n            Name: outName,\r\n            Screen: screen,\r\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\r\n        }"
                   }
                 }
               },
@@ -344,7 +344,7 @@
                 },
                 "region": {
                   "charLength": 34,
-                  "charOffset": 175,
+                  "charOffset": 182,
                   "snippet": {
                     "text": "'Mileage Reimbursement Bug Report'"
                   }
@@ -384,7 +384,7 @@
                 },
                 "region": {
                   "charLength": 34,
-                  "charOffset": 228,
+                  "charOffset": 236,
                   "snippet": {
                     "text": "'Mileage Reimbursement Bug Report'"
                   }
@@ -424,7 +424,7 @@
                 },
                 "region": {
                   "charLength": 44,
-                  "charOffset": 219,
+                  "charOffset": 227,
                   "snippet": {
                     "text": "Defaults('Mileage Reimbursement Bug Report')"
                   }
@@ -464,7 +464,7 @@
                 },
                 "region": {
                   "charLength": 50,
-                  "charOffset": 714,
+                  "charOffset": 737,
                   "snippet": {
                     "text": "'Status Reason (Mileage Reimbursement Bug Report)'"
                   }
@@ -504,7 +504,7 @@
                 },
                 "region": {
                   "charLength": 59,
-                  "charOffset": 706,
+                  "charOffset": 729,
                   "snippet": {
                     "text": "Choices('Status Reason (Mileage Reimbursement Bug Report)')"
                   }
@@ -544,7 +544,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 766,
+                  "charOffset": 789,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -583,10 +583,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 628,
-                  "charOffset": 160,
+                  "charLength": 647,
+                  "charOffset": 166,
                   "snippet": {
-                    "text": "Patch(\n        'Mileage Reimbursement Bug Report',\n        Defaults('Mileage Reimbursement Bug Report'),\n        {\n            'Screen Shot': {\n                FileName: outName,\n                Value: PDF(\n                    App.ActiveScreen,\n                    {\n                        DPI: 24,\n                        Orientation: PaperOrientation.Landscape\n                    }\n                )\n            },\n            'Bug Description': desc,\n            Name: outName,\n            Screen: screen,\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\n        }\n    )"
+                    "text": "Patch(\r\n        'Mileage Reimbursement Bug Report',\r\n        Defaults('Mileage Reimbursement Bug Report'),\r\n        {\r\n            'Screen Shot': {\r\n                FileName: outName,\r\n                Value: PDF(\r\n                    App.ActiveScreen,\r\n                    {\r\n                        DPI: 24,\r\n                        Orientation: PaperOrientation.Landscape\r\n                    }\r\n                )\r\n            },\r\n            'Bug Description': desc,\r\n            Name: outName,\r\n            Screen: screen,\r\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\r\n        }\r\n    )"
                   }
                 }
               },
@@ -623,10 +623,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 509,
-                  "charOffset": 273,
+                  "charLength": 524,
+                  "charOffset": 282,
                   "snippet": {
-                    "text": "{\n            'Screen Shot': {\n                FileName: outName,\n                Value: PDF(\n                    App.ActiveScreen,\n                    {\n                        DPI: 24,\n                        Orientation: PaperOrientation.Landscape\n                    }\n                )\n            },\n            'Bug Description': desc,\n            Name: outName,\n            Screen: screen,\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\n        }"
+                    "text": "{\r\n            'Screen Shot': {\r\n                FileName: outName,\r\n                Value: PDF(\r\n                    App.ActiveScreen,\r\n                    {\r\n                        DPI: 24,\r\n                        Orientation: PaperOrientation.Landscape\r\n                    }\r\n                )\r\n            },\r\n            'Bug Description': desc,\r\n            Name: outName,\r\n            Screen: screen,\r\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\r\n        }"
                   }
                 }
               },
@@ -664,7 +664,7 @@
                 },
                 "region": {
                   "charLength": 34,
-                  "charOffset": 175,
+                  "charOffset": 182,
                   "snippet": {
                     "text": "'Mileage Reimbursement Bug Report'"
                   }
@@ -704,7 +704,7 @@
                 },
                 "region": {
                   "charLength": 34,
-                  "charOffset": 228,
+                  "charOffset": 236,
                   "snippet": {
                     "text": "'Mileage Reimbursement Bug Report'"
                   }
@@ -744,7 +744,7 @@
                 },
                 "region": {
                   "charLength": 44,
-                  "charOffset": 219,
+                  "charOffset": 227,
                   "snippet": {
                     "text": "Defaults('Mileage Reimbursement Bug Report')"
                   }
@@ -784,7 +784,7 @@
                 },
                 "region": {
                   "charLength": 50,
-                  "charOffset": 714,
+                  "charOffset": 737,
                   "snippet": {
                     "text": "'Status Reason (Mileage Reimbursement Bug Report)'"
                   }
@@ -824,7 +824,7 @@
                 },
                 "region": {
                   "charLength": 59,
-                  "charOffset": 706,
+                  "charOffset": 729,
                   "snippet": {
                     "text": "Choices('Status Reason (Mileage Reimbursement Bug Report)')"
                   }
@@ -864,7 +864,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 766,
+                  "charOffset": 789,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -903,10 +903,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 628,
-                  "charOffset": 160,
+                  "charLength": 647,
+                  "charOffset": 166,
                   "snippet": {
-                    "text": "Patch(\n        'Mileage Reimbursement Bug Report',\n        Defaults('Mileage Reimbursement Bug Report'),\n        {\n            'Screen Shot': {\n                FileName: outName,\n                Value: PDF(\n                    App.ActiveScreen,\n                    {\n                        DPI: 24,\n                        Orientation: PaperOrientation.Landscape\n                    }\n                )\n            },\n            'Bug Description': desc,\n            Name: outName,\n            Screen: screen,\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\n        }\n    )"
+                    "text": "Patch(\r\n        'Mileage Reimbursement Bug Report',\r\n        Defaults('Mileage Reimbursement Bug Report'),\r\n        {\r\n            'Screen Shot': {\r\n                FileName: outName,\r\n                Value: PDF(\r\n                    App.ActiveScreen,\r\n                    {\r\n                        DPI: 24,\r\n                        Orientation: PaperOrientation.Landscape\r\n                    }\r\n                )\r\n            },\r\n            'Bug Description': desc,\r\n            Name: outName,\r\n            Screen: screen,\r\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\r\n        }\r\n    )"
                   }
                 }
               },
@@ -943,10 +943,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 509,
-                  "charOffset": 273,
+                  "charLength": 524,
+                  "charOffset": 282,
                   "snippet": {
-                    "text": "{\n            'Screen Shot': {\n                FileName: outName,\n                Value: PDF(\n                    App.ActiveScreen,\n                    {\n                        DPI: 24,\n                        Orientation: PaperOrientation.Landscape\n                    }\n                )\n            },\n            'Bug Description': desc,\n            Name: outName,\n            Screen: screen,\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\n        }"
+                    "text": "{\r\n            'Screen Shot': {\r\n                FileName: outName,\r\n                Value: PDF(\r\n                    App.ActiveScreen,\r\n                    {\r\n                        DPI: 24,\r\n                        Orientation: PaperOrientation.Landscape\r\n                    }\r\n                )\r\n            },\r\n            'Bug Description': desc,\r\n            Name: outName,\r\n            Screen: screen,\r\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\r\n        }"
                   }
                 }
               },
@@ -968,6 +968,35 @@
           },
           "ruleId": "app-ErrColDNE-Name",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "Screen1",
+                "type": "Screen1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "acc-ReadableScreenNameNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -997,7 +1026,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1027,7 +1056,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1057,7 +1086,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1087,7 +1116,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1117,7 +1146,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1147,7 +1176,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1177,36 +1206,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Screen1",
-                "type": "Screen1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1235,7 +1235,7 @@
             "level": "Low"
           },
           "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1264,7 +1264,7 @@
             "level": "Low"
           },
           "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 5
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1348,6 +1348,23 @@
               }
             },
             {
+              "id": "acc-ReadableScreenNameNeeded",
+              "messageStrings": {
+                "issue": {
+                  "text": "Revise screen name"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Give the screen  a title that describes what's on the screen or what it's used for."
+                ],
+                "level": "Low",
+                "primaryCategory": "accessibility",
+                "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
+              }
+            },
+            {
               "id": "acc-AccessibleLabelNeeded",
               "messageStrings": {
                 "issue": {
@@ -1379,23 +1396,6 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
-              }
-            },
-            {
-              "id": "acc-ReadableScreenNameNeeded",
-              "messageStrings": {
-                "issue": {
-                  "text": "Revise screen name"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Give the screen  a title that describes what's on the screen or what it's used for."
-                ],
-                "level": "Low",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
               }
             },
             {

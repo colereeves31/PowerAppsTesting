@@ -125,7 +125,7 @@
                     "NameMapSourceSchema": "?"
                   }
                 ],
-                "ControlUniqueId": "7",
+                "ControlUniqueId": "9",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": {
@@ -209,7 +209,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "VCT_WelcomeUser",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 7,
+                "PublishOrderIndex": 5,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -583,7 +583,7 @@
                     "NameMapSourceSchema": "?"
                   }
                 ],
-                "ControlUniqueId": "8",
+                "ControlUniqueId": "10",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": {
@@ -667,7 +667,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "VCT_WelcomeUser",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 8,
+                "PublishOrderIndex": 6,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1001,7 +1001,7 @@
               "RadiusBottomLeft",
               "RadiusBottomRight"
             ],
-            "ControlUniqueId": "6",
+            "ControlUniqueId": "8",
             "DynamicProperties": [
               {
                 "ControlPropertyState": {
@@ -1296,7 +1296,7 @@
                     "NameMapSourceSchema": "?"
                   }
                 ],
-                "ControlUniqueId": "10",
+                "ControlUniqueId": "12",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": "FillPortions",
@@ -1352,7 +1352,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "HCT_Navigation",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 9,
+                "PublishOrderIndex": 8,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1593,7 +1593,7 @@
                     "NameMapSourceSchema": "?"
                   }
                 ],
-                "ControlUniqueId": "11",
+                "ControlUniqueId": "13",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": "FillPortions",
@@ -1649,7 +1649,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "HCT_Navigation",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 10,
+                "PublishOrderIndex": 9,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1797,7 +1797,7 @@
                   },
                   {
                     "Category": "Behavior",
-                    "InvariantScript": "HeaderV2.BugAction();\n//HeaderV2.BugEvent(HeaderV2.BugReportScreen.Name);",
+                    "InvariantScript": "HeaderV2.BugAction();\r\n//HeaderV2.BugEvent(HeaderV2.BugReportScreen.Name);",
                     "Property": "OnSelect",
                     "RuleProviderType": "Unknown"
                   }
@@ -1911,7 +1911,7 @@
                     "NameMapSourceSchema": "?"
                   }
                 ],
-                "ControlUniqueId": "12",
+                "ControlUniqueId": "14",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": "FillPortions",
@@ -1967,7 +1967,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "HCT_Navigation",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 11,
+                "PublishOrderIndex": 10,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -2250,7 +2250,7 @@
                 "NameMapSourceSchema": "?"
               }
             ],
-            "ControlUniqueId": "9",
+            "ControlUniqueId": "11",
             "DynamicProperties": [
               {
                 "ControlPropertyState": "FillPortions",
@@ -2306,7 +2306,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 5,
+            "PublishOrderIndex": 7,
             "Rules": [
               {
                 "Category": "Design",
@@ -2556,7 +2556,7 @@
               "PaddingBottom",
               "PaddingLeft"
             ],
-            "ControlUniqueId": "13",
+            "ControlUniqueId": "15",
             "DynamicProperties": [
               {
                 "ControlPropertyState": "FillPortions",
@@ -2612,7 +2612,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 6,
+            "PublishOrderIndex": 11,
             "Rules": [
               {
                 "Category": "Data",
@@ -2908,7 +2908,7 @@
             "NameMapSourceSchema": "?"
           }
         ],
-        "ControlUniqueId": "5",
+        "ControlUniqueId": "7",
         "HasDynamicProperties": false,
         "Index": 0,
         "IsAutoGenerated": false,
@@ -2922,7 +2922,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "HeaderV2",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 2,
+        "PublishOrderIndex": 3,
         "Rules": [
           {
             "Category": "Design",
@@ -3010,7 +3010,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "0\n",
+            "InvariantScript": "0\r\n",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -3196,7 +3196,7 @@
                         "NameMapSourceSchema": "?"
                       }
                     ],
-                    "ControlUniqueId": "17",
+                    "ControlUniqueId": "19",
                     "DynamicProperties": [
                       {
                         "ControlPropertyState": "FillPortions",
@@ -3612,7 +3612,7 @@
                         "NameMapSourceSchema": "?"
                       }
                     ],
-                    "ControlUniqueId": "18",
+                    "ControlUniqueId": "20",
                     "DynamicProperties": [
                       {
                         "ControlPropertyState": {
@@ -4023,7 +4023,7 @@
                     "NameMapSourceSchema": "?"
                   }
                 ],
-                "ControlUniqueId": "16",
+                "ControlUniqueId": "18",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": {
@@ -4300,7 +4300,7 @@
               "DropShadow",
               "ZIndex"
             ],
-            "ControlUniqueId": "15",
+            "ControlUniqueId": "17",
             "HasDynamicProperties": false,
             "Index": 0,
             "IsAutoGenerated": false,
@@ -4314,7 +4314,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Popup",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 12,
+            "PublishOrderIndex": 13,
             "Rules": [
               {
                 "Category": "Design",
@@ -4551,7 +4551,7 @@
                 "NameMapSourceSchema": "?"
               }
             ],
-            "ControlUniqueId": "19",
+            "ControlUniqueId": "21",
             "HasDynamicProperties": false,
             "Index": 0,
             "IsAutoGenerated": false,
@@ -4565,7 +4565,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Popup",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 13,
+            "PublishOrderIndex": 17,
             "Rules": [
               {
                 "Category": "Data",
@@ -4779,7 +4779,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "HeaderV2.BugEvent(TXT_EntryValue_1.Text);\nHeaderV2.BugSubmission();",
+                "InvariantScript": "HeaderV2.BugEvent(TXT_EntryValue_1.Text);\r\nHeaderV2.BugSubmission();",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -4936,7 +4936,7 @@
             "NameMapSourceSchema": "?"
           }
         ],
-        "ControlUniqueId": "14",
+        "ControlUniqueId": "16",
         "HasDynamicProperties": false,
         "Index": 0,
         "IsAutoGenerated": false,
@@ -4950,7 +4950,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "HeaderV2",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 3,
+        "PublishOrderIndex": 12,
         "Rules": [
           {
             "Category": "Design",
@@ -5247,7 +5247,7 @@
       },
       "BugEvent_BugDescription"
     ],
-    "LastModifiedTimestamp": "638466510143484019",
+    "LastModifiedTimestamp": "638466485907637403",
     "Name": "HeaderV2",
     "Rules": [
       {
@@ -5320,19 +5320,19 @@
         "Category": "Design",
         "InvariantScript": "1",
         "Property": "ZIndex",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "0",
         "Property": "Y",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "0",
         "Property": "X",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
@@ -5360,13 +5360,13 @@
       },
       {
         "Category": "Behavior",
-        "InvariantScript": "With(\n    {\n        screen: App.ActiveScreen.Name,\n        outName: Concatenate(App.ActiveScreen.Name,\"_\",Text(Now())),\n        desc: BugDescription\n    },\n    Patch(\n        'Mileage Reimbursement Bug Report',\n        Defaults('Mileage Reimbursement Bug Report'),\n        {\n            'Screen Shot': {\n                FileName: outName,\n                Value: PDF(\n                    App.ActiveScreen,\n                    {\n                        DPI: 24,\n                        Orientation: PaperOrientation.Landscape\n                    }\n                )\n            },\n            'Bug Description': desc,\n            Name: outName,\n            Screen: screen,\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\n        }\n    )\n)",
+        "InvariantScript": "With(\r\n    {\r\n        screen: App.ActiveScreen.Name,\r\n        outName: Concatenate(App.ActiveScreen.Name,\"_\",Text(Now())),\r\n        desc: BugDescription\r\n    },\r\n    Patch(\r\n        'Mileage Reimbursement Bug Report',\r\n        Defaults('Mileage Reimbursement Bug Report'),\r\n        {\r\n            'Screen Shot': {\r\n                FileName: outName,\r\n                Value: PDF(\r\n                    App.ActiveScreen,\r\n                    {\r\n                        DPI: 24,\r\n                        Orientation: PaperOrientation.Landscape\r\n                    }\r\n                )\r\n            },\r\n            'Bug Description': desc,\r\n            Name: outName,\r\n            Screen: screen,\r\n            'Status Reason': First(Choices('Status Reason (Mileage Reimbursement Bug Report)')).Value\r\n        }\r\n    )\r\n)",
         "Property": "BugEvent",
         "RuleProviderType": "System"
       },
       {
         "Category": "Behavior",
-        "InvariantScript": "Concurrent(\n    Set(expanded,Blank()),\n    Set(patchPrep,Blank())\n);",
+        "InvariantScript": "Concurrent(\r\n    Set(expanded,Blank()),\r\n    Set(patchPrep,Blank())\r\n);",
         "Property": "OnReset",
         "RuleProviderType": "System"
       },
@@ -5461,7 +5461,7 @@
       "Name": "HomeAction",
       "PropertyDataTypeKey": "Void",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "4",
+        "PropertyScopeRuleNamespaceKey": "6",
         "PropertyScopeRulesKey": []
       },
       "Tooltip": "A custom property",
@@ -5474,7 +5474,7 @@
       "Name": "BackAction",
       "PropertyDataTypeKey": "Void",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "4",
+        "PropertyScopeRuleNamespaceKey": "6",
         "PropertyScopeRulesKey": []
       },
       "Tooltip": "A custom property",
@@ -5487,7 +5487,7 @@
       "Name": "BugEvent",
       "PropertyDataTypeKey": "Void",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "4",
+        "PropertyScopeRuleNamespaceKey": "6",
         "PropertyScopeRulesKey": [
           {
             "DisplayName": "BugEvent_BugDescription",
@@ -5516,7 +5516,7 @@
       "Name": "BugAction",
       "PropertyDataTypeKey": "Void",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "4",
+        "PropertyScopeRuleNamespaceKey": "6",
         "PropertyScopeRulesKey": []
       },
       "Tooltip": "A custom property",
@@ -5538,7 +5538,7 @@
       "Name": "BugSubmission",
       "PropertyDataTypeKey": "Void",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "4",
+        "PropertyScopeRuleNamespaceKey": "6",
         "PropertyScopeRulesKey": []
       },
       "Tooltip": "A custom property",
@@ -5580,7 +5580,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638466510143484019",
+  "LastModifiedTimestamp": "638466485907637403",
   "Name": "c83afc174dc74ccaafd259d9aa2ec3a4",
   "OverridableProperties": {},
   "SourceLibraryId": "6072c0f1-e860-4d22-86ff-e0a5ba412f06",
